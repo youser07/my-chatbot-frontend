@@ -1,0 +1,83 @@
+/* Apply background to the entire page */
+body {
+  background-color: #E7D283; /* Light orange */
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Add header styling */
+.header {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  color: #EB5A3C; /* Dark coral */
+  margin-bottom: 20px;
+}
+
+.App {
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Ensures content aligns to the bottom */
+  height: 500px; /* Set the height to fit your needs */
+}
+
+.chatbox {
+  flex-grow: 1; /* Allows the chatbox to grow as needed */
+  overflow-y: auto; /* Optionally add overflow if you need scrolling */
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #ffffff; /* White background for chat area */
+}
+
+.user-message {
+  text-align: right;
+  margin-bottom: 5px;
+  background-color: #EB5A3C; /* Dark coral for user messages */
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.bot-message {
+  text-align: left;
+  margin-bottom: 5px;
+  background-color: #DF9755; /* Lighter orange for bot messages */
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+input[type="text"] {
+  width: 80%;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px;
+  background-color: #EB5A3C; /* Dark coral for button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #DF9755; /* Lighter orange on hover */
+}
