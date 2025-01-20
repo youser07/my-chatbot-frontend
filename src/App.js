@@ -17,7 +17,7 @@ function App() {
 
     // Send message to backend
     try {
-      const response = await axios.post('https://my-chatbot-backend-etcb.onrender.com', { message: userMessage });
+      const response = await axios.post('https://my-chatbot-backend-etcb.onrender.com/message', { message: userMessage });
       // Add bot response to the chat
       setMessages([...newMessages, { text: response.data.response, isUser: false }]);
     } catch (error) {
